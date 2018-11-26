@@ -1,86 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Omobio | Open Mobile IO</title>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-  
+  <title>Omobio</title>
 </head>
 
 <body>
-  <div class='loader'>
-  <div class='loader_overlay'></div>
-  <div class='loader_cogs'>
-    <div class='loader_cogs__top'>
-      <div class='top_part'></div>
-      <div class='top_part'></div>
-      <div class='top_part'></div>
-      <div class='top_hole'></div>
-    </div>
-    <div class='loader_cogs__left'>
-      <div class='left_part'></div>
-      <div class='left_part'></div>
-      <div class='left_part'></div>
-      <div class='left_hole'></div>
-    </div>
-    <div class='loader_cogs__bottom'>
-      <div class='bottom_part'></div>
-      <div class='bottom_part'></div>
-      <div class='bottom_part'></div>
-      <div class='bottom_hole'><!-- lol --></div>
-    </div>
-
-  </div>
-  </div>
-    
-    <header>
+    <div class='loader'>
+        <div class='loader_overlay'></div>
+        <div class='loader_cogs'>
+          <div class='loader_cogs__top'>
+            <div class='top_part'></div>
+            <div class='top_part'></div>
+            <div class='top_part'></div>
+            <div class='top_hole'></div>
+          </div>
+          <div class='loader_cogs__left'>
+            <div class='left_part'></div>
+            <div class='left_part'></div>
+            <div class='left_part'></div>
+            <div class='left_hole'></div>
+          </div>
+          <div class='loader_cogs__bottom'>
+            <div class='bottom_part'></div>
+            <div class='bottom_part'></div>
+            <div class='bottom_part'></div>
+            <div class='bottom_hole'><!-- lol --></div>
+            
+          </div>
+      
+        </div>
         
-          <ul class="main-nav">
-                        <li><a class="aactive"href="#1" >Home</a></li>
-                        <li><a href="#2">About</a></li>
-                        <li><a href="#3">Products</a></li>
-                        <li><a href="#4">Careers</a></li>
-						<li><a href="#4">News</a></li>
-                        <li><a href="#5">Contacts</a></li>
-                    </ul>
-        <div id="logo">
-           <img src="img/logo.png" style="height: auto;width: 150px;">
-     </div>
-        
-    </header>
-    
-    
-    
-    
-    
-    
-    
-    
-  
-<script type="text/javascript">
- $('body').append('<div class="loader">Loading...</div></div>');
-$(window).on('load', function(){
-  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-});
-function removeLoader(){
-    $( ".loader" ).fadeOut(900, function() {
-      // fadeOut complete. Remove the loading div
-      $( ".loader" ).remove(); //makes page more lightweight 
-  });  
-}
-    </script>
+        </div>
+  <!-- START HERE -->
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"> <img src="img/logo.png" alt="Smiley face" height="37" width="113"> </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#explore-head-section" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#explore-head-section" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#create-head-section" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#share-head-section" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 
-   
-
-
-
-
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+  <script type="text/javascript">
+    $('body').append('<div class="loader">Loading...</div></div>');
+   $(window).on('load', function(){
+     setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+   });
+   function removeLoader(){
+       $( ".loader" ).fadeOut(900, function() {
+         // fadeOut complete. Remove the loading div
+         $( ".loader" ).remove(); //makes page more lightweight 
+     });  
+   }
+       </script>
 </body>
 
 </html>
