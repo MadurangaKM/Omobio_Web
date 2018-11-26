@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Omobio | Open Mobile IO</title>
+    
+  <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  
+</head>
+
+<body>
+  <div class='loader'>
+  <div class='loader_overlay'></div>
+  <div class='loader_cogs'>
+    <div class='loader_cogs__top'>
+      <div class='top_part'></div>
+      <div class='top_part'></div>
+      <div class='top_part'></div>
+      <div class='top_hole'></div>
+    </div>
+    <div class='loader_cogs__left'>
+      <div class='left_part'></div>
+      <div class='left_part'></div>
+      <div class='left_part'></div>
+      <div class='left_hole'></div>
+    </div>
+    <div class='loader_cogs__bottom'>
+      <div class='bottom_part'></div>
+      <div class='bottom_part'></div>
+      <div class='bottom_part'></div>
+      <div class='bottom_hole'><!-- lol --></div>
+    </div>
+
+  </div>
+  </div>
+    
+    <header>
+        
+          <ul class="main-nav">
+                        <li><a class="aactive"href="#1" >Home</a></li>
+                        <li><a href="#2">About</a></li>
+                        <li><a href="#3">Products</a></li>
+                        <li><a href="#4">Careers</a></li>
+						<li><a href="#4">News</a></li>
+                        <li><a href="#5">Contacts</a></li>
+                    </ul>
+        <div id="logo">
+           <img src="img/logo.png" style="height: auto;width: 150px;">
+     </div>
+        
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    
+  
+<script type="text/javascript">
+ $('body').append('<div class="loader">Loading...</div></div>');
+$(window).on('load', function(){
+  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( ".loader" ).fadeOut(900, function() {
+      // fadeOut complete. Remove the loading div
+      $( ".loader" ).remove(); //makes page more lightweight 
+  });  
+}
+    </script>
+
+  
+
+   
+
+
+
+
+</body>
+
+</html>
